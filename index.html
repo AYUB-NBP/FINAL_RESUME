@@ -19,6 +19,14 @@
                     <style type="text/css" id="static">
                         /*savepage-import-url=https://fonts.googleapis.com/css?family=Saira:300,400,500,600,900*/
                         /* vietnamese */
+                        :root {
+                            --color1: #339999;
+                            --color2: rgb(255, 255, 255);
+                            --color3: white  ;
+                            --shadow: rgb(71, 71, 71);
+
+                        }
+
                         @font-face {
                             font-family: Arial, Helvetica, sans-serif;
                             font-style: normal;
@@ -285,7 +293,7 @@
                         }
 
                         body {
-                            background-color: #ff9000;
+                            background-color: var(--color2);
                             line-height: 1;
                             text-align: left;
                             font-feature-settings: "liga" 0;
@@ -376,7 +384,7 @@
                         }
 
                         #document.skn-mli5 .parentContainer {
-                            box-shadow: #7e2400 2px 0px 20px ;
+                            box-shadow: var(--shadow) 2px 0px 20px;
                             display: table;
                             table-layout: fixed;
                             width: 100%;
@@ -398,13 +406,17 @@
 
                         /* Common style for left and right box */
                         #document.skn-mli5 .left-box {
-                            background-color: white;
+                            background-color: var(--color3);
                             padding: 30px 20px 30px 35px;
                             display: table-cell;
                             vertical-align: top;
                             letter-spacing: 0.2px
                         }
-                        .right-box{color:#ff9000 !important;}
+
+                        .right-box {
+                            color: var(--color2) !important;
+                        }
+
                         #document.skn-mli5 .right-box {
                             background-color: #496267;
                             box-sizing: content-box;
@@ -849,7 +861,8 @@
                         }
 
                         #document.skn-mli5 .name {
-                            color: #023E69;;
+                            color: var(--color1);
+                            ;
                             font-size: 45px;
                             line-height: 45px
                         }
@@ -870,12 +883,12 @@
                         }
 
                         #document.skn-mli5 .left-box .sectiontitle {
-                            color: #023E69;
+                            color: var(--color1);
                         }
 
                         #document.skn-mli5 .right-box {
                             width: 212px;
-                            background-color: #023E69;
+                            background-color: var(--color1);
                         }
 
                         #document.skn-mli5 ul li {
@@ -884,7 +897,7 @@
 
                         #document.skn-mli5 .sectiontitle,
                         #document.skn-mli5 .left-box .section:first-child {
-                            border-color: #023E69;
+                            border-color: var(--color1);
                         }
 
                         #document.skn-mli5 .disclaim {
@@ -910,7 +923,7 @@
 
                         #document.skn-mli5 .adrs-field svg .fillclr,
                         #document.skn-mli5 .icon-svg svg {
-                            fill: #023E69;
+                            fill: var(--color1);
                         }
 
                         #document.skn-mli5 .address .adrs-field>.addrCircle {
@@ -984,7 +997,7 @@
 
                         #document.skn-mli5 .left-box .inner-rating,
                         #document.skn-mli5 .right-box .rating-bar:before {
-                            background-color: #023E69;
+                            background-color: var(--color1);
                         }
 
                         /*Infographic Tiles*/
@@ -1003,7 +1016,7 @@
                         /*Rectangular Rating Blocks*/
                         #document.skn-mli5 .lang-sec.infotilesec .sliced-rect .sliced-rect-tile.ratvfill,
                         #document.skn-mli5 .sliced-rect .sliced-rect-tile.ratvfill {
-                            background-color: #023E69;
+                            background-color: var(--color1);
                         }
 
                         /*Fixes for builder*/
@@ -1018,7 +1031,7 @@
                         }
 
                         #document.skn-mli5 .left-box .sortable-item:first-child .section {
-                            border-color: #023E69;
+                            border-color: var(--color1);
                         }
 
                         /*Builder fixed for hovering*/
@@ -1037,11 +1050,11 @@
                         .page-finalize #document.skn-mli5 .right-box .data-SKLI.active .inner-rating,
                         .page-finalize #document.skn-mli5 .right-box .active-drag .inner-rating,
                         .page-finalize #document.skn-mli5 .right-box .active-drag .sliced-rect .sliced-rect-tile.ratvfill {
-                            background: #023E69;
+                            background: var(--color1);
                         }
 
                         #document.skn-mli5 .right-box .active .sectiontitle {
-                            border-color: #023E69;
+                            border-color: var(--color1);
                         }
 
                         #document.skn-mli5 .left-box .lang-sec .sortableInner .sortable-item,
@@ -1188,7 +1201,7 @@
                                                                 He loves astronomy, listening to music, singing, watching Sci-fi movies and playing Video games. -->
                                                             <p>Ayoub Mellouk is trying to join Judge.me as a European
                                                                 Time Zone Customer Support in May 2022.</p>
-                                                                <br>
+                                                            <br>
                                                             <p>Before Judge.me, Ayoub was studying front-end web
                                                                 development online in order to break into the IT
                                                                 industry.
@@ -2100,7 +2113,7 @@
                                                             <span class="paddedline" id="FIELD_SKC1">
                                                                 <ul>
                                                                     <p><strong>Technical Skills:</strong></p>
-                                                                    <li>HTML &amp; CSS</li>                                                    
+                                                                    <li>HTML &amp; CSS</li>
                                                                     <li>Javascript, Python, Django (Fundamentals)</li>
                                                                     <li>Good Drawing Skills</li>
                                                                     <li>Blender 3D, Keyshot 11</li>
