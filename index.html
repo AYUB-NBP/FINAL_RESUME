@@ -22,7 +22,7 @@
                         :root {
                             --color1: #339999;
                             --color2: rgb(255, 255, 255);
-                            --color3: white  ;
+                            --color3: white;
                             --shadow: rgb(71, 71, 71);
 
                         }
@@ -1087,12 +1087,14 @@
                         /* support for IE Browser */
                         @media screen and (min-width:0\0) {}
 
-                        /* Responsive Rules*/
-                        @media screen and (min-width: 600px) {
-                            html {
-                                zoom: 100%;
+                        /* mobile */
+                        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+                            html{
+                                zoom: normal;
                             }
                         }
+
+                        /* Desktop*/
 
                         @media screen and (min-width: 900px) {
                             html {
